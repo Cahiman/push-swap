@@ -6,11 +6,26 @@
 /*   By: baiannon <baiannon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 16:48:04 by baiannon          #+#    #+#             */
-/*   Updated: 2024/08/28 17:41:28 by baiannon         ###   ########.fr       */
+/*   Updated: 2024/08/29 16:23:06 by baiannon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+int	get_list_len(t_node *list)
+{
+	int i;
+
+	i = 0;
+	if (list == NULL)
+		return (0);
+	while (list)
+	{
+		i++;
+		list = list->next;
+	}
+	return (i);
+}
 
 void	init_list(t_node **a, char **args, bool two_args)
 {

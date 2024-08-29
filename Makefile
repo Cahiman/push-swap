@@ -9,6 +9,9 @@ C_FILES =	main.c\
 		rotate.c\
 		three_node_algo.c\
 		reverse.c\
+		big_algo.c\
+		big_algo_prep.c\
+		push.c\
 
 
 SRCS = $(addprefix srcs/,$(C_FILES))

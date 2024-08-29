@@ -6,7 +6,7 @@
 /*   By: baiannon <baiannon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 16:05:59 by baiannon          #+#    #+#             */
-/*   Updated: 2024/08/28 18:15:32 by baiannon         ###   ########.fr       */
+/*   Updated: 2024/08/29 16:48:53 by baiannon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ int	main(int ac, char **av)
 		else if (get_list_len(a) == 3)
 			sort_three(&a);
 		else
-			big_algo(&a, &b);
+			sorting_algo(&a, &b);
 	}
+	free_node(&a);
 }
