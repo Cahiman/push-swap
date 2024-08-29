@@ -6,7 +6,7 @@
 /*   By: baiannon <baiannon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 18:21:35 by baiannon          #+#    #+#             */
-/*   Updated: 2024/08/29 15:15:31 by baiannon         ###   ########.fr       */
+/*   Updated: 2024/08/29 17:32:56 by baiannon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	pos_and_median(t_node *list)
 {
-	int pos;
+	int	pos;
 	int	median;
 
 	pos = 0;
@@ -33,12 +33,12 @@ void	pos_and_median(t_node *list)
 	}
 }
 
-static void target(t_node *a, t_node *b)
+static void	target(t_node *a, t_node *b)
 {
 	t_node	*node;
 	t_node	*target;
 	long	closest_big;
-	
+
 	while (b)
 	{
 		closest_big = LONG_MAX;
@@ -75,7 +75,7 @@ static void	cost(t_node *a, t_node *b)
 		if (b->target->above_median)
 			b->cost += b->target->pos;
 		else
-			b->cost = a_len - (b->target->pos);
+			b->cost += a_len - (b->target->pos);
 		b = b->next;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: baiannon <baiannon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 16:05:59 by baiannon          #+#    #+#             */
-/*   Updated: 2024/08/29 16:48:53 by baiannon         ###   ########.fr       */
+/*   Updated: 2024/08/29 17:30:12 by baiannon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,11 @@
 
 int	main(int ac, char **av)
 {
-	t_node *a;
-	t_node *b;
+	t_node	*a;
+	t_node	*b;
 
 	a = NULL;
 	b = NULL;
-	
 	if ((ac == 1) || (ac == 2 && !av[1][0]))
 		return (EXIT_FAILURE);
 	else if (ac == 2)
@@ -35,4 +34,5 @@ int	main(int ac, char **av)
 			sorting_algo(&a, &b);
 	}
 	free_node(&a);
+	return (0);
 }

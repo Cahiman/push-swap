@@ -6,7 +6,7 @@
 /*   By: baiannon <baiannon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 16:34:59 by baiannon          #+#    #+#             */
-/*   Updated: 2024/08/28 16:47:03 by baiannon         ###   ########.fr       */
+/*   Updated: 2024/08/29 17:30:31 by baiannon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	free_node(t_node **stack)
 {
-	t_node *tmp_node;
-	t_node *current_node;
+	t_node	*tmp_node;
+	t_node	*current_node;
 
 	if (stack == NULL)
 		return ;

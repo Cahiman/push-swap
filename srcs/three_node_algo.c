@@ -6,7 +6,7 @@
 /*   By: baiannon <baiannon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 17:48:44 by baiannon          #+#    #+#             */
-/*   Updated: 2024/08/28 18:02:09 by baiannon         ###   ########.fr       */
+/*   Updated: 2024/08/29 17:30:56 by baiannon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	sort_three(t_node **a)
 {
-	t_node *biggest_node;
-	
+	t_node	*biggest_node;
+
 	biggest_node = find_biggest_node(*a);
 	if (*a == biggest_node)
 		ft_ra(a);

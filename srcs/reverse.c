@@ -6,7 +6,7 @@
 /*   By: baiannon <baiannon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 18:08:55 by baiannon          #+#    #+#             */
-/*   Updated: 2024/08/28 18:13:07 by baiannon         ###   ########.fr       */
+/*   Updated: 2024/08/29 17:32:23 by baiannon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void	reverse(t_node **list)
 {
 	t_node	*last_node;
-	int				len;
+	int		len;
 
 	len = get_list_len(*list);
 	if (*list == NULL || list == NULL || len == 1)

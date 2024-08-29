@@ -6,12 +6,11 @@
 /*   By: baiannon <baiannon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 16:26:53 by baiannon          #+#    #+#             */
-/*   Updated: 2024/08/28 16:56:54 by baiannon         ###   ########.fr       */
+/*   Updated: 2024/08/29 17:31:21 by baiannon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
 
 int	check_number(char *n)
 {

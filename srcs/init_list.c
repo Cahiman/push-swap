@@ -6,7 +6,7 @@
 /*   By: baiannon <baiannon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 16:48:04 by baiannon          #+#    #+#             */
-/*   Updated: 2024/08/29 16:23:06 by baiannon         ###   ########.fr       */
+/*   Updated: 2024/08/29 17:31:01 by baiannon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	get_list_len(t_node *list)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (list == NULL)
@@ -51,8 +51,8 @@ void	init_list(t_node **a, char **args, bool two_args)
 
 void	new_node(t_node **stack, int nbr)
 {
-	t_node *new_node;
-	t_node *last_node;
+	t_node	*new_node;
+	t_node	*last_node;
 
 	if (stack == NULL)
 		return ;
@@ -73,4 +73,3 @@ void	new_node(t_node **stack, int nbr)
 		new_node->prev = last_node;
 	}
 }
-

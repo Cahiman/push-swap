@@ -6,13 +6,13 @@
 /*   By: baiannon <baiannon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 17:07:18 by baiannon          #+#    #+#             */
-/*   Updated: 2024/08/29 16:24:10 by baiannon         ###   ########.fr       */
+/*   Updated: 2024/08/29 17:27:54 by baiannon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_node *_last_node(t_node *node)
+t_node	*_last_node(t_node *node)
 {
 	if (node == NULL)
 		return (NULL);
@@ -47,10 +47,10 @@ t_node	*find_cheapest(t_node *list)
 	return (NULL);
 }
 
-t_node *find_biggest_node(t_node *list)
+t_node	*find_biggest_node(t_node *list)
 {
-	int	i;
-	t_node *biggest_node;
+	int		i;
+	t_node	*biggest_node;
 
 	if (list == NULL)
 		return (NULL);
@@ -63,26 +63,26 @@ t_node *find_biggest_node(t_node *list)
 			i = list->nbr;
 		}
 		list = list->next;
-	}	
+	}
 	return (biggest_node);
 }
 
 t_node	*search_smallest_node_value(t_node *list)
 {
-		long	smallest_value;
-		t_node	*smallest_node;
-		
-		if (list == NULL)
-			return (NULL);
-		smallest_value = LONG_MAX;
-		while (list)
+	long	smallest_value;
+	t_node	*smallest_node;
+
+	if (list == NULL)
+		return (NULL);
+	smallest_value = LONG_MAX;
+	while (list)
+	{
+		if (list->nbr < smallest_value)
 		{
-			if (list->nbr < smallest_value)
-			{
-				smallest_value = list->nbr;
-				smallest_node = list;
-			}
-			list = list->next;
+			smallest_value = list->nbr;
+			smallest_node = list;
 		}
-		return (smallest_node);
+		list = list->next;
+	}
+	return (smallest_node);
 }
