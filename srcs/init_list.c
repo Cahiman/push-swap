@@ -6,7 +6,7 @@
 /*   By: baiannon <baiannon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 16:48:04 by baiannon          #+#    #+#             */
-/*   Updated: 2024/08/29 17:31:01 by baiannon         ###   ########.fr       */
+/*   Updated: 2024/08/30 10:42:04 by baiannon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	init_list(t_node **a, char **args, bool two_args)
 	{
 		if (check_number(args[i]) == 1)
 			free_errors(a, args, two_args);
-		nbr = ft_atol(args[i]);
+		nbr = ft_atol(args[i]);	
 		if (nbr > INT_MAX || nbr < INT_MIN)
 			free_errors(a, args, two_args);
 		if (check_for_doublon(*a, nbr) == 1)
